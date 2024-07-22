@@ -1,1 +1,74 @@
+body {
+    background-image: url('imback.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(143, 64, 248, 0.6); 
+}
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: rgba(143, 64, 248, 0.9);
+}
+
+
+.button-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Ajout pour centrer verticalement */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgba(143, 64, 248, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: rgba(143, 64, 248, 0.7);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(143, 64, 248, 0.5);
+}
+
+.aucun-etudiant {
+    font-weight: bold; 
+    font-size: 24px; 
+  color: rgba(143, 64, 248, 0.9);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: rgba(143, 64, 248, 0.5);
+    color: #fff;
+}
 
