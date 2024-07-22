@@ -1,0 +1,33 @@
+<!-- espace_notes.html -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestion des NOTES</title>
+  <link rel="stylesheet" href="espace_notes.css">
+</head>
+<body>
+<div class="container">
+  <h1>Remplissage des notes </h1>
+  <form id="notes-form">
+    <div id="students-table"></div>
+    <div>
+      <label for="pourcentage">Pourcentage :</label>
+      <input type="number" id="pourcentage" name="pourcentage" required min="0" max="100">
+    </div>
+    <button type="button" id="save-button">Enregistrer</button>
+    <a href="note.php"><button type="button">Retour</button></a>
+    <div id="error-message" style="color: red;"></div>
+  </form>
+  <script src="espace_notes.js"></script>
+</div>
+</body>
+</html>
+
+
+
+
+
+

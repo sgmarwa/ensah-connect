@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des absences</title>
+    <link rel="stylesheet" href="souka.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Liste d'absence des étudiants pour le <span id="current-date"></span></h1>
+        <div id="absence-table"></div>
+        <!-- Ajout du bouton TERMINER -->
+        <div id="finish-button-container">
+            <button onclick="window.location.href='espace-prof.php'">TERMINER</button>
+            <a href="abscence.php"><button type="button">Retour</button></a>
+        </div>
+        <script src="souka.js"></script>
+        <script>
+            // Récupérer la date actuelle
+            var currentDate = new Date();
+            
+            // Formater la date pour l'affichage
+            var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            var formattedDate = currentDate.toLocaleDateString('fr-FR', options);
+            
+            // Afficher la date dans l'élément avec l'ID "current-date"
+            document.getElementById("current-date").innerText = formattedDate;
+            
+            // Charger les étudiants lorsque la page est chargée
+            document.addEventListener('DOMContentLoaded', loadStudents);
+        </script>
+    </div>
+</body>
+</html>
+
+
+
+
+

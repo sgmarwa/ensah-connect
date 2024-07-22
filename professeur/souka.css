@@ -1,0 +1,100 @@
+/* souka.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('imback.jpg'); /* Utiliser imback.jpg comme image de fond */
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.6); /* Ajouter un fond blanc semi-transparent */
+    border-radius: 8px; /* Ajouter des coins arrondis */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(143, 64, 248, 0.9);
+}
+
+#absence-table {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centrer le contenu */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: rgba(143, 64, 248, 0.5); 
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(143, 64, 248, 0.1); 
+}
+
+#finish-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#finish-button-container button {
+    background-color: rgba(143, 64, 248, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-left: 20px;
+}
+
+#finish-button-container button:hover {
+    background-color: rgba(143, 64, 248, 0.7);
+}
+
+.btn-absence {
+    padding: 10px 20px;
+    background-color: rgba(143, 64, 248, 0.5); 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-absence:hover {
+    background-color: rgba(143, 64, 248, 0.7); 
+}
+
+.btn-absence:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(143, 64, 248, 0.5);
+}

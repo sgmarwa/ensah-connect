@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('imback.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgba(143, 64, 248, 0.9);
+}
+#students-table {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+ 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Ajout pour centrer le contenu */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: rgba(143, 64, 248, 0.5);
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(143, 64, 248, 0.1);
+}
+
+input[type="number"] {
+    width: 70%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    margin: 0 auto;
+    display: block;
+}
+
+
+label {
+    text-align: center;
+    display: block; /* Affichage en bloc pour placer le label sur une nouvelle ligne */
+    margin-bottom: 5px; /* Espacement en bas */
+    font-weight: bold; /* Éventuellement, rendre le texte en gras */
+    margin-top: 20px;
+}
+
+#pourcentage {
+    width: 20%; /* Réduire la largeur */
+    margin: 0 auto; /* Centrer */
+    margin-bottom: 20px; 
+}
+
+#save-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: rgba(143, 64, 248, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgba(143, 64, 248, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#save-button:hover {
+    background-color: rgba(143, 64, 248, 0.7);
+}
+
+#save-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(143, 64, 248, 0.5);
+}
+
+
