@@ -31,7 +31,7 @@ if(isset($_SESSION['id_etudiant'])) {
         FROM module
         INNER JOIN professeur_filiere ON module.id_module = professeur_filiere.id_module
         INNER JOIN professeur ON professeur_filiere.id_professeur = professeur.id_professeur 
-        WHERE professeur_filiere.id_filiere = '$id_filiere' AND module.id_module LIKE CONCAT('$nomfiliere', '2%')";
+        WHERE professeur_filiere.id_filiere = '$id_filiere' AND module.id_module LIKE CONCAT('$nomfiliere', '1%')";
 
                      
                      
