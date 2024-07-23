@@ -1,0 +1,228 @@
+.header {
+  position: fixed;  
+  top: 0;  
+  width: 100%;  
+  height: 70px; 
+  background-image: url(imback3.jpg);
+  box-shadow: rgba(245, 143, 245, 0.35) 0px 5px 15px;
+   
+}
+/* navbar style  */
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  }
+  body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background-color:  #e2e5f4 ;  */
+  /* backdrop-filter: blur(9px); */
+  background-image: url(imback3.jpg);
+  background-repeat: no-repeat; 
+background-position: center;  
+background-size: cover;
+  }
+  
+  nav a {
+   
+  position: relative;
+  font-size: 1.1em;
+  font-weight: 500;
+   color:#cb04dd ; /*la couleur d'ecriture */
+  text-decoration: none;
+  padding: 6px 30px;
+  transition: 0.5s;
+  font-size: 20px; 
+    font-family:Georgia, serif; /* Specifies the font family */
+    font-weight: bold;
+  
+  }
+  nav a:hover {
+  color: rgba(122, 3, 122, 0.35) ; 
+  /* lorsque le cu est sur about ..  */
+   
+  }
+  
+  nav a span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-bottom: 2px solid #b894ec;
+  border-radius: 15px;
+  transform: scale(0) translateY(50px);  
+  opacity: 0;
+  transition: 0.5s;
+  }
+  nav a:hover span {
+  transform: scale(1) translateY(0);  
+  opacity: 2;
+  }
+  .id1 {
+    color: #eaeaea;
+  }
+  @import url('https://fonts.cdnfonts.com/css/brittany-signature');
+  .id2 {
+    position: absolute;  
+    top: 13%;  
+    left: 3%;    
+    color: #cb04dd;
+    font-size: 29px; /* Sets the font size to 18 pixels */
+    font-family: 'Brittany Signature', sans-serif; 
+     
+    font-weight: bold;
+     
+     
+  }
+   
+  nav img{
+  position: fixed;
+  top: 5%;
+  transform: translateY(-50%);
+  right: 9px;  
+  z-index: 1000000;
+   
+  cursor: pointer; 
+  width: 40px;
+  height: 40px;
+ }
+ nav1 {
+  display: flex; /* Enable flexbox for the navbar */
+  align-items: center; /* Align items vertically */
+}
+
+nav1 a {
+  display: flex; /* Enable flexbox for links */
+  align-items: center;
+}
+
+.user-icon {
+  margin-right: 20px; /* Add margin to the right of the icon */
+}
+/* -----------------------------user list ----------------------------------- */
+#user-list {
+position: absolute;  
+top: 40px;  
+right: 20px; 
+width: 260px;  
+padding: 10px;  
+display: none;  
+backdrop-filter: blur(9px);
+border-radius: 9px;
+box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+transition: background-color 600ms, border-color 600ms;
+z-index: 10000;
+background-color: #b406060d;
+border: 1px solid rgba(150, 14, 105, 0.1);
+
+}
+
+#user-list li {
+list-style: none;  
+margin-bottom: 5px;  
+display: flex;  
+align-items: center;
+width: 600px;
+
+}
+
+#user-list a {
+text-decoration: none;  
+color: #816aae; 
+margin-right: 20px;
+font-size: 16px;
+  
+}
+/* ------------------------------------------------------------- */
+
+#edt-list, #semestre-list , #notes-list ,#devoirs-list{
+text-align: center; /* Centrer le contenu des listes */
+display: none;
+/* border-radius: 20px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+ 
+}
+
+#edt-list a, #semestre-list a , #notes-list a ,#devoirs-list a  {
+text-decoration: none;  
+color: #fbfafd; 
+margin: 0 auto; /* Centrer horizontalement les liens */
+margin-bottom: 17px; /* Espacement entre les liens */
+ 
+font-size: 18px;
+}
+
+
+/* --------------------------------------------------------------------------------------------------- */
+div.boutons a {
+  text-decoration: none;
+  color: #fff;
+  }
+
+  div.boutons a:hover {
+  color: #cb04dd;
+   }
+
+   div.boutons a:active {
+  color: #816aae;
+}
+ 
+ 
+ 
+
+/* les bouttons  */
+button {
+  padding: 20px 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: 0px;
+  background: transparent;
+  position: relative;
+  transition: all .2s;
+  overflow: hidden;
+  color: #fff;
+  border-radius: 30px;
+  box-shadow: 0px -0px 0px 0px rgba(143, 64,  248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5);
+  background: rgb(251,247,247);
+background: linear-gradient(90deg, rgba(251,247,247,1) 0%, rgba(182,177,177,1) 56%, rgba(184,114,181,1) 95%, rgba(233,126,208,0.9304096638655462) 100%);
+   
+}
+button::after {
+  content: '';
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  background: rgb(250,189,254);
+background: linear-gradient(90deg, rgba(250,189,254,1) 0%, rgba(230,113,237,1) 56%, rgba(231,42,242,1) 95%, rgba(244,13,190,0.9304096638655462) 100%);
+  z-index: -1;
+  transition: all .5s;
+}
+button:hover::after {
+  transform: rotate(150deg);
+}
+
+button:hover {
+  transform: translate(0,-6px);
+  box-shadow: 10px -10px 25px 0px #9b509140, -10px 10px 25px 0px rgba(39, 200,  255, .25);
+}
+/* les positions  */
+.boutons {
+  display: flex;  
+ flex-direction: column;  
+   
+  gap: 20px;  
+}
+
+.btn1, .btn2, .btn3, .btn4, .btn5 {
+  margin-left: 50px
+  padding 10px 20px; 
+}
