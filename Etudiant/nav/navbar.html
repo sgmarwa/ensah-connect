@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Vertical Cliquable</title>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu-motion.css' rel='stylesheet'>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
 
+        .menu-container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .menu-button {
+            background: rgb(251,247,247);
+    background: linear-gradient(90deg, rgba(251,247,247,1) 0%, rgba(182,177,177,1) 56%, rgba(184,114,181,1) 95%, rgba(233,126,208,0.9304096638655462) 100%);  /* heeeeeeeeeere */
+             
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20PX;
+            border: transparent;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        .dropdown-content {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            
+            min-width: 160px;
+             
+            z-index:  1;
+        }
+
+        .dropdown-content button {
+            background: rgb(251,247,247);
+            background: linear-gradient(90deg, rgba(251,247,247,1) 0%, rgba(182,177,177,1) 56%, rgba(184,114,181,1) 95%, rgba(233,126,208,0.9304096638655462) 100%);  /* heeeeeeeeeere */
+            color: #000000;
+            padding: 12px 12px;
+            border: darkgrey;
+            text-align: left;
+            text-decoration: none;
+            display: block;
+            width: 130px;  
+            cursor: pointer;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        .dropdown-content button:hover {
+            background-color: #d197c7;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <button id="mainButton" class="menu-button"><i class="gg-menu-motion"></i></button>
+        <div id="dropdownMenu" class="dropdown-content">
+            <button onclick="location.href='../test/xx.php'">Accueil</button>
+            <button onclick="location.href='../test/logout.php'">Se deconnecter</button>
+             
+        </div>
+    </div>
+    <script>
+        document.getElementById('mainButton').onclick = function() {
+            var menu = document.getElementById('dropdownMenu');
+            if (menu.style.display === "flex") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "flex";
+            }
+        };
+    </script>
+</body>
+</html>
